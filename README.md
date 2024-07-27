@@ -6,7 +6,7 @@
 
 HiQuE is designed for multimodal depression detection through hierarchical question embedding.
 
-<img width="455" alt="스크린샷 2024-07-27 오전 11 03 15" src="https://github.com/user-attachments/assets/12ea6f4c-3fd4-4064-be01-453f16a82ad1">
+<p align="center"><img width="455" alt="스크린샷 2024-07-27 오전 11 03 15" src="https://github.com/user-attachments/assets/12ea6f4c-3fd4-4064-be01-453f16a82ad1"></p>
 
 ## Method
 
