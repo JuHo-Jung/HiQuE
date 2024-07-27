@@ -1,17 +1,19 @@
 # HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection
 
-<p align="center"><img width="400" alt="스크린샷 2024-07-27 오전 11 18 27" src="https://github.com/user-attachments/assets/aca2cbcb-c2d7-48a7-9f09-2a76267d69a7"></p>
-
 
 ## Introduction 
 
 HiQuE is designed for multimodal depression detection through hierarchical question embedding.
 
-<p align="center"><img width="400" alt="스크린샷 2024-07-27 오전 11 16 03" src="https://github.com/user-attachments/assets/b63cb012-ae5c-48a9-a99d-9a328b2e3b94"></p>
+
+<p align="center"><img width="400" alt="스크린샷 2024-07-27 오전 11 18 27" src="https://github.com/user-attachments/assets/aca2cbcb-c2d7-48a7-9f09-2a76267d69a7"></p>
 
 
 
 ## Method
+
+<p align="center"><img width="450" alt="스크린샷 2024-07-27 오전 11 16 03" src="https://github.com/user-attachments/assets/b63cb012-ae5c-48a9-a99d-9a328b2e3b94"></p>
+
 
 **1. Transcription:** Whisper was used to transcribe WAV audio files.
 
