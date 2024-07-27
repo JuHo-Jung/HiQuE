@@ -1,46 +1,51 @@
 # HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection
 
+Official code for [ACM CIKM 2024] HiQuE
 
 ## Introduction 
 
+HiQuE is designed for multimodal depression detection through hierarchical question embedding.
+
 ## Code Description
 
-HiQuE
+### HiQuE Components
 
-- whisper_segment.py: extract transcript, timestamp (start and end point) from interview wav file
-- preprocess.py: map
-- split_wav.py: split interview sequence into each question-answer pairs
-- similarity.py: bert-score based similarity question mapping (topic, topic idx, topic question) 
-- Feature extraction: extract audio,
-  - extract_audio.py: extract audio feature
-  - extract_visual.py: extract visual feature
-  - extract_bert.py: extract text feature
-- fusionmodel.py: proposed model
-- hique.py: training and testing the model
+- whisper_segment.py: Extracts transcript and timestamps (start and end points) from interview WAV files.
+- preprocess.py: Maps data.
+- split_wav.py: Splits interview sequences into individual question-answer pairs.
+- similarity.py: Performs BERT-score-based similarity question mapping (topic, topic index, topic question).
+- Feature extraction: Extracts audio, visual, and text features:
+  - extract_audio.py: Extracts audio features.
+  - extract_visual.py: Extracts visual features.
+  - extract_bert.py: Extracts text features.
+- fusionmodel.py: Contains the proposed model.
+- hique.py: Handles model training and testing.
 
-Embedding 
+### Embedding 
 
-- text, audio embedding code using various encoder 
+Code for text and audio embedding using various encoders.
 
 
 ## Method
-We initially utilized Whisper to transcribe WAV audio files. Subsequently, we assumed ellie as the questioner and divided the roles into the interviewer (ellie) and interviewee (participant). Although not executed due to time constraints, applying ASR algorithms during this process could potentially yield more accurate tagging. Next, we calculated the semantic similarity between the interviewer's questions and the 85 predefined questions from Appendix E using the bert-score metric. An example of the outcomes of this question mapping is as follows:
 
+1. Transcription: Used Whisper to transcribe WAV audio files.
 
-Before mapping (Raw) -> After mapping (Question Embedding)
+2. Role Identification: Assumed 'ellie' as the questioner, distinguishing interviewer (ellie) and interviewee (participant).
 
-ex1. You travel? -> Do you travel a lot (main) 
+- Note: Implementing ASR algorithms could improve tagging accuracy.
 
-ex2.  Can you be a little bit more specific? ->  Can you give me an example of that (follow-up) 
+3. Semantic Similarity: Calculated similarity between interviewer's questions and 85 predefined questions from Appendix E using the BERT-score metric.
 
-ex3. What do you decide to do now? -> What do you do now (main) 
+- Example Mappings:
+  - Before: "You travel?" -> After: "Do you travel a lot (main)"
+  - Before: "Can you be a little bit more specific?" -> After: "Can you give me an example of that (follow-up)"
+  - Before: "What do you decide to do now?" -> After: "What do you do now (main)"
+  - Before: "Where are you from?" -> After: "Where are you from originally (main)"
+  - Before: "How many of your kids?" -> After: "Tell me about your kids (main)"
+    
+4. Subsequent Steps: Followed methodologies from our paper for question elaboration, hierarchical position elaboration, and feature extraction.
 
-ex4. Where are you from? ->  Where are you from originally (main) 
-
-ex5. How many of your kids? ->  Tell me about your kids (main) 
-
-
-After completing the question mapping, the subsequent steps of the process (question elaboration, hierarchical position elaboration, feature extraction) remained consistent with the methodologies detailed in our paper. We then proceeded with binary classification to differentiate between depression and normal states.
+5. Classification: Conducted binary classification to distinguish between depression and normal states.
 
 
 ## Limitations : 
