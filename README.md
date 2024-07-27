@@ -28,13 +28,13 @@ Code for text and audio embedding using various encoders.
 
 ## Method
 
-1. Transcription: Used Whisper to transcribe WAV audio files.
+### 1. Transcription: Used Whisper to transcribe WAV audio files.
 
-2. Role Identification: Assumed 'Ellie' as the questioner, distinguishing interviewer (Ellie) and interviewee (participant).
+### 2. Role Identification: Assumed 'Ellie' as the questioner, distinguishing interviewer (Ellie) and interviewee (participant).
 
   - Note: Implementing ASR algorithms could improve tagging accuracy.
 
-3. Semantic Similarity: The similarity between the interviewer's questions and 85 predefined questions from Appendix E was calculated using the BERT-score metric.
+### 3. Semantic Similarity: The similarity between the interviewer's questions and 85 predefined questions from Appendix E was calculated using the BERT-score metric.
 
   - Example Mappings:
     - Before: "You travel?" -> After: "Do you travel a lot (main)"
@@ -43,9 +43,9 @@ Code for text and audio embedding using various encoders.
     - Before: "Where are you from?" -> After: "Where are you from originally (main)"
     - Before: "How many of your kids?" -> After: "Tell me about your kids (main)"
     
-4. Subsequent Steps: Followed methodologies from our paper for question elaboration, hierarchical position elaboration, and feature extraction.
+### 4. Subsequent Steps: Followed methodologies from our paper for question elaboration, hierarchical position elaboration, and feature extraction.
 
-5. Classification: Conducted binary classification to distinguish between depression and normal states.
+### 5. Classification: Conducted binary classification to distinguish between depression and normal states.
 
 
 ## Limitations : 
