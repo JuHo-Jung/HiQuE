@@ -12,7 +12,7 @@ HiQuE is designed for multimodal depression detection through hierarchical quest
 
 ## Method
 
-<p align="center"><img width="500" alt="스크린샷 2024-07-27 오전 11 16 03" src="https://github.com/user-attachments/assets/b63cb012-ae5c-48a9-a99d-9a328b2e3b94"></p>
+<p align="center"><img width="600" alt="스크린샷 2024-07-27 오전 11 16 03" src="https://github.com/user-attachments/assets/b63cb012-ae5c-48a9-a99d-9a328b2e3b94"></p>
 
 
 **1. Transcription:** Whisper was used to transcribe WAV audio files.
