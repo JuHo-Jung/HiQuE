@@ -1,12 +1,13 @@
 # HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection
 
-
+<p align="center"><img width="355" alt="스크린샷 2024-07-27 오전 11 03 15" src="https://github.com/user-attachments/assets/12ea6f4c-3fd4-4064-be01-453f16a82ad1"></p>
 
 ## Introduction 
 
 HiQuE is designed for multimodal depression detection through hierarchical question embedding.
 
-<p align="center"><img width="455" alt="스크린샷 2024-07-27 오전 11 03 15" src="https://github.com/user-attachments/assets/12ea6f4c-3fd4-4064-be01-453f16a82ad1"></p>
+<img width="400" alt="스크린샷 2024-07-27 오전 11 16 03" src="https://github.com/user-attachments/assets/b63cb012-ae5c-48a9-a99d-9a328b2e3b94">
+
 
 ## Method
 
