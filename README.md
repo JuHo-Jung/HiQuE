@@ -30,18 +30,18 @@ Code for text and audio embedding using various encoders.
 
 1. Transcription: Used Whisper to transcribe WAV audio files.
 
-2. Role Identification: Assumed 'ellie' as the questioner, distinguishing interviewer (ellie) and interviewee (participant).
+2. Role Identification: Assumed 'Ellie' as the questioner, distinguishing interviewer (Ellie) and interviewee (participant).
 
-- Note: Implementing ASR algorithms could improve tagging accuracy.
+  - Note: Implementing ASR algorithms could improve tagging accuracy.
 
-3. Semantic Similarity: Calculated similarity between interviewer's questions and 85 predefined questions from Appendix E using the BERT-score metric.
+3. Semantic Similarity: The similarity between the interviewer's questions and 85 predefined questions from Appendix E was calculated using the BERT-score metric.
 
-- Example Mappings:
-  - Before: "You travel?" -> After: "Do you travel a lot (main)"
-  - Before: "Can you be a little bit more specific?" -> After: "Can you give me an example of that (follow-up)"
-  - Before: "What do you decide to do now?" -> After: "What do you do now (main)"
-  - Before: "Where are you from?" -> After: "Where are you from originally (main)"
-  - Before: "How many of your kids?" -> After: "Tell me about your kids (main)"
+  - Example Mappings:
+    - Before: "You travel?" -> After: "Do you travel a lot (main)"
+    - Before: "Can you be a little bit more specific?" -> After: "Can you give me an example of that (follow-up)"
+    - Before: "What do you decide to do now?" -> After: "What do you do now (main)"
+    - Before: "Where are you from?" -> After: "Where are you from originally (main)"
+    - Before: "How many of your kids?" -> After: "Tell me about your kids (main)"
     
 4. Subsequent Steps: Followed methodologies from our paper for question elaboration, hierarchical position elaboration, and feature extraction.
 
@@ -49,11 +49,15 @@ Code for text and audio embedding using various encoders.
 
 
 ## Limitations : 
-There are several limitations to our extensive experiment. Firstly, since the text was transcribed based on audio, the accuracy of the text content may be compromised. Additionally, relying solely on audio makes it challenging to identify whether the interviewer or interviewee speaks precisely. Therefore, such errors could potentially introduce confusion in the model's training and validation processes.
+Several limitations were noted during our experiments:
+
+- Transcription Accuracy: As text was transcribed from audio, inaccuracies may exist in the text content.
+- Role Identification: Reliance on audio alone makes it difficult to accurately distinguish between the interviewer and interviewee, potentially causing confusion in model training and validation.
 
 ## Findings : 
-Based on this extensive experiment, our research validates the generalizability of our model in capturing depression cues from audio, even for questions not predefined.
-
+Our research demonstrates that the HiQuE model can generalize well in detecting depression cues from audio, even for questions that were not predefined.
 
 
 # Citation 
+Please cite our work as follows:
+
