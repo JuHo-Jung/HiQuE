@@ -5,6 +5,8 @@
 
 ## Code Description
 
+HiQuE
+
 - whisper_segment.py: extract transcript, timestamp (start and end point) from interview wav file
 - preprocess.py: map
 - split_wav.py: split interview sequence into each question-answer pairs
@@ -15,7 +17,11 @@
   - extract_bert.py: extract text feature
 - fusionmodel.py: proposed model
 - hique.py: training and testing the model
-  
+
+Embedding 
+
+- text, audio embedding code using various encoder 
+
 
 ## Method
 We initially utilized Whisper to transcribe WAV audio files. Subsequently, we assumed ellie as the questioner and divided the roles into the interviewer (ellie) and interviewee (participant). Although not executed due to time constraints, applying ASR algorithms during this process could potentially yield more accurate tagging. Next, we calculated the semantic similarity between the interviewer's questions and the 85 predefined questions from Appendix E using the bert-score metric. An example of the outcomes of this question mapping is as follows:
