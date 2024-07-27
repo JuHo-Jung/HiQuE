@@ -1,30 +1,12 @@
 # HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection
 
-Official code for [ACM CIKM 2024] HiQuE
+
 
 ## Introduction 
 
 HiQuE is designed for multimodal depression detection through hierarchical question embedding.
 
-## Code Description
-
-### HiQuE Components
-
-- whisper_segment.py: Extracts transcript and timestamps (start and end points) from interview WAV files.
-- preprocess.py: Maps data.
-- split_wav.py: Splits interview sequences into individual question-answer pairs.
-- similarity.py: Performs BERT-score-based similarity question mapping (topic, topic index, topic question).
-- Feature extraction: Extracts audio, visual, and text features:
-  - extract_audio.py: Extracts audio features.
-  - extract_visual.py: Extracts visual features.
-  - extract_bert.py: Extracts text features.
-- fusionmodel.py: Contains the proposed model.
-- hique.py: Handles model training and testing.
-
-### Embedding 
-
-Code for text and audio embedding using various encoders.
-
+[figure1.pdf](https://github.com/user-attachments/files/16397830/figure1.pdf)
 
 ## Method
 
@@ -46,6 +28,25 @@ Code for text and audio embedding using various encoders.
 4. Subsequent Steps: Followed methodologies from our paper for question elaboration, hierarchical position elaboration, and feature extraction.
 
 5. Classification: Conducted binary classification to distinguish between depression and normal states.
+
+## Code Description
+
+### HiQuE Components
+
+- whisper_segment.py: Extracts transcript and timestamps (start and end points) from interview WAV files.
+- preprocess.py: Maps data.
+- split_wav.py: Splits interview sequences into individual question-answer pairs.
+- similarity.py: Performs BERT-score-based similarity question mapping (topic, topic index, topic question).
+- Feature extraction: Extracts audio, visual, and text features:
+  - extract_audio.py: Extracts audio features.
+  - extract_visual.py: Extracts visual features.
+  - extract_bert.py: Extracts text features.
+- fusionmodel.py: Contains the proposed model.
+- hique.py: Handles model training and testing.
+
+### Embedding 
+
+Code for text and audio embedding using various encoders.
 
 
 ## Limitations : 
