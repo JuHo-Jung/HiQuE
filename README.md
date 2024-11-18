@@ -39,7 +39,7 @@ HiQuE is designed for multimodal depression detection through hierarchical quest
 ### HiQuE Components
 
 - ```whisper_segment.py```: Extracts transcript and timestamps (start and end points) from interview WAV files.
-- preprocess.py: Maps data.
+- ```preprocess.py```: Maps data.
 - ```split_wav.py```: Splits interview sequences into individual question-answer pairs.
 - ```similarity.py```: Performs BERT-score-based similarity question mapping (topic, topic index, topic question).
 - Feature extraction: Extracts audio, visual, and text features:
