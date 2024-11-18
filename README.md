@@ -1,4 +1,4 @@
-# HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection
+# HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection [CIKM 2024]
 
 
 ## Introduction 
@@ -66,4 +66,15 @@ Our research demonstrates that the HiQuE model can generalize well in detecting 
 
 # Citation 
 Please cite our work as follows:
+
+```
+@inproceedings{jung2024hique,
+  title={HiQuE: Hierarchical Question Embedding Network for Multimodal Depression Detection},
+  author={Jung, Juho and Kang, Chaewon and Yoon, Jeewoo and Kim, Seungbae and Han, Jinyoung},
+  booktitle={Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
+  pages={1049--1059},
+  year={2024}
+}
+```
+
 
